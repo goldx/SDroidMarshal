@@ -49,10 +49,11 @@ public class SDroidMarshalServlet extends HttpServlet {
                       ", name = " + item.getName());
           
         }
+        
+        stream.close();
       }
     } catch (Exception ex) {
       throw new ServletException(ex);
     }
-
-    }
+  }
 }
